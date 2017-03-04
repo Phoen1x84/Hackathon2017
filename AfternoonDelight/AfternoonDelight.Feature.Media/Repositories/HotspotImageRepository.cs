@@ -11,6 +11,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Exceptions;
+using Sitecore.Security.Accounts;
 using Sitecore.XA.Foundation.SitecoreExtensions.Extensions;
 
 namespace AfternoonDelight.Feature.Media.Repositories
@@ -60,20 +61,23 @@ namespace AfternoonDelight.Feature.Media.Repositories
 
             TemplateID templateId = new TemplateID(Templates.Hotspot.ID);
 
-            Item hotspotItem = hotspotImageItem.Add($"{hotspotModel.LocationX} - {hotspotModel.LocationY}", templateId);
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                Item hotspotItem = hotspotImageItem.Add($"{hotspotModel.LocationX} {hotspotModel.LocationY}", templateId);
 
-            try
-            {
-                hotspotItem.Editing.BeginEdit();
-                hotspotItem.Fields[Templates.Hotspot.Fields.LocationX].Value = hotspotModel.LocationX.ToString();
-                hotspotItem.Fields[Templates.Hotspot.Fields.LocationY].Value = hotspotModel.LocationY.ToString();
-                hotspotItem.Editing.EndEdit();
-            }
-            catch (Exception e)
-            {
-                hotspotItem.Editing.CancelEdit();
-                Log.Error(e.Message, e, this);
-                throw;
+                try
+                {
+                    hotspotItem.Editing.BeginEdit();
+                    hotspotItem.Fields[Templates.Hotspot.Fields.LocationX].Value = hotspotModel.LocationX.ToString();
+                    hotspotItem.Fields[Templates.Hotspot.Fields.LocationY].Value = hotspotModel.LocationY.ToString();
+                    hotspotItem.Editing.EndEdit();
+                }
+                catch (Exception e)
+                {
+                    hotspotItem.Editing.CancelEdit();
+                    Log.Error(e.Message, e, this);
+                    throw;
+                }
             }
         }
 

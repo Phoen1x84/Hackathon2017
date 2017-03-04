@@ -238,6 +238,7 @@
     <Compile Include="Models\HotspotCoordinateViewModel.cs" />
     <Compile Include="Models\HotspotImageRenderingModel.cs" />
     <Compile Include="Models\HotspotModel.cs" />
+    <Compile Include="Pipelines\Initialize\RegisterCustomRoute.cs" />
     <Compile Include="Pipelines\IoC\RegisterAfternoonDelightMediaServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\HotspotImageRepository.cs" />

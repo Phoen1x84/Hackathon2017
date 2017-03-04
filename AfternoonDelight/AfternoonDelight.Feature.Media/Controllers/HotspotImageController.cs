@@ -85,5 +85,10 @@ namespace AfternoonDelight.Feature.Media.Controllers
                 return Json(e);
             }
         }
+
+        public JsonResult Test()
+        {
+            return Json("Test");
+        }
     }
 }
