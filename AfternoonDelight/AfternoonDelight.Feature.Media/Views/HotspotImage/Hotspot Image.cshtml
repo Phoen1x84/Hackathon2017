@@ -8,9 +8,9 @@
 
 @model AfternoonDelight.Feature.Media.Models.HotspotImageRenderingModel
 
-<div class="hotspots-controls">
-    <a href="#" class="hotspots-controls__activate">Add hotspot</a>
-    <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
+<div class="hotspot-controls">
+    <a href="#" class="hotspot-controls__activate">Add hotspot</a>
+    <a href="#" class="hotspot-controls__deactivate">Remove hotspot</a>
 </div>
 <div class="hotspot-image" @Html.Sxa().Component("hotspot-image", Model.Attributes) data-hotspot-image-id="@Model.Id" data-database-name="@Model.DatabaseName">
     @Model.MessageIsEmpty

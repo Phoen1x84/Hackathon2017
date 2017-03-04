@@ -92,3 +92,22 @@ figure {
     flex-shrink: 0; }
   .hotspot-item__content {
     padding: 10px 20px; }
+
+.hotspot-controls {
+  font-size: 16px; }
+  .hotspot-controls__activate {
+    background: #1a5d04;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block; }
+    .hotspot-controls__activate:hover {
+      background: #288e06; }
+  .hotspot-controls__deactivate {
+    background: #cc0000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block; }
+    .hotspot-controls__deactivate:hover {
+      background: #f00; }
