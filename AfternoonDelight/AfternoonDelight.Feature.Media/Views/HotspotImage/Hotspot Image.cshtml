@@ -14,7 +14,16 @@
 </div>
 <div class="hotspot-image" @Html.Sxa().Component("hotspot-image", Model.Attributes) data-hotspot-image-id="@Model.Id" data-database-name="@Model.DatabaseName">
     @Model.MessageIsEmpty
-    <h2>@Model.ImageTitle</h2>
+    <h2>
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            @Html.Sitecore().Field("ImageTitle", Model.GetRenderingWebEditingParams())
+        }
+        else
+        {
+            @Html.Raw(Model.ImageTitle)
+        }
+    </h2>
     
     <div class="hotspot-image__image">
         @Model.Image
@@ -52,9 +61,25 @@
                 </div>
 
                 <div class="hotspot-item__content">
-                    <h2>@hotspotModel.Title</h2>
+                    <h2>
+                        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                        {
+                            @Html.Sitecore().Field("Title", Model.GetRenderingWebEditingParams())
+                        }
+                        else
+                        {
+                            @Html.Raw(hotspotModel.Title)
+                        }
+                    </h2>
                     <div>
-                        @Html.Raw(@hotspotModel.Description)
+                        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                        {
+                            @Html.Sitecore().Field("ImageDescription", Model.GetRenderingWebEditingParams())
+                        }
+                        else
+                        {
+                            @Html.Raw(@hotspotModel.Description)
+                        }
                     </div>
                 </div>
             </div>

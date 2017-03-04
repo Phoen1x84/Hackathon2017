@@ -8,6 +8,7 @@ namespace AfternoonDelight.Feature.Media.Models
 {
     public class HotspotCoordinateViewModel
     {
+        public string Title { get; set; }
         public string HotspotImageId { get; set; }
         [Range(0, 100)]
         public double XLocation { get; set; }
