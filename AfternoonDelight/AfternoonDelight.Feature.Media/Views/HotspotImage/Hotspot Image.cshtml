@@ -8,6 +8,10 @@
 
 @model AfternoonDelight.Feature.Media.Models.HotspotImageRenderingModel
 
+<div class="hotspots-controls">
+    <a href="#" class="hotspots-controls__activate">Add hotspot</a>
+    <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
+</div>
 <div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes)>
     @Model.MessageIsEmpty
     <h2>@Model.ImageTitle</h2>
@@ -51,3 +55,6 @@
         }
     </div>
 </div>
+<!-- hotspot ENDS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="~/dist/scripts/component-hotspot.js"></script>
