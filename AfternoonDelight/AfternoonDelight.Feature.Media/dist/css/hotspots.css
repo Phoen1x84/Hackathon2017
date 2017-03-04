@@ -89,7 +89,8 @@ figure {
     -ms-flex-positive: 0;
     flex-grow: 0;
     -ms-flex-negative: 0;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    padding: 10px; }
   .hotspot-item__content {
     padding: 10px 20px; }
 
