@@ -219,6 +219,7 @@
     <Content Include="src\scripts\hotspots.js" />
     <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />
     <Content Include="src\styles\hotspots.scss" />
+    <Content Include="src\styles\modules\_hotspots.scss" />
     <None Include="Views\Web.config" />
     <Content Include="App_Config\Include\zzzAfternoonDelight\AfternoonDelight.Feature.Media.config" />
     <None Include="Web.Debug.config">
@@ -253,7 +254,6 @@
     <Folder Include="src\scripts\utilities\" />
     <Folder Include="src\scripts\vendor\" />
     <Folder Include="src\styles\core\" />
-    <Folder Include="src\styles\modules\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

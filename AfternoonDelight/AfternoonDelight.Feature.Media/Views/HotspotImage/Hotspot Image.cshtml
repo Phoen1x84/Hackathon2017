@@ -10,27 +10,39 @@
 
 <div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes)>
     @Model.MessageIsEmpty
-    <p>@Model.ImageTitle</p>
+    <h2>@Model.ImageTitle</h2>
+    
     <div class="hotspot-image__image">
         @Model.Image
-        <span class="hotspot-image__hotspot  hotspot-image__hotspot--active a">
-        </span>
-        <span class="hotspot-image__hotspot b"></span>
-        <span class="hotspot-image__hotspot  hotspot-image__hotspot--large c"></span>
-    <div>
+        
+        <div class="js-hotspots">
+            @foreach (HotspotModel hotspotModel in Model.Hotspots)
+            {
+                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY ; left: @hotspotModel.LocationX ;">
+                    @hotspotModel.Title
+                    @hotspotModel.Description
+                    @hotspotModel.Icon
+                    @hotspotModel.LocationX
+                    @hotspotModel.LocationY
+                </span>
+            }
+        </div>
+    </div>
+
+    <div class="hotspot-image__description">
         @if (Model.HasImageDescription || (!Model.HasImageDescription && Html.Sxa().IsEdit))
         {
-            <span class="image-caption">
-                @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
-                {
-                    @Html.Sitecore().Field("ImageDescription", Model.GetRenderingWebEditingParams())
-                }
-                else
-                {
-                    @Html.Sitecore().Field("ImageDescription")
-                }
-            </span>
+            if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                @Html.Sitecore().Field("ImageDescription", Model.GetRenderingWebEditingParams())
+            }
+            else
+            {
+                @Html.Sitecore().Field("ImageDescription")
+            }
         }
+    </div>
+
     <div>
         @foreach (HotspotModel hotspotModel in Model.Hotspots)
         {
@@ -43,4 +55,4 @@
             </div>
         }
     </div>
-<div>
+</div>
