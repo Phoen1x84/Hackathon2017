@@ -76,15 +76,13 @@ figure {
     display: block; }
 
 .hotspot-item {
-  display: none;
-  background: #a9a9a9; }
-  .hotspot-item:first-child {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: no-wrap;
-    flex-wrap: no-wrap; }
+  display: -ms-flexbox;
+  display: flex;
+  background: #a9a9a9;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap; }
   .hotspot-item__icon {
     width: 150px;
     height: 150px;

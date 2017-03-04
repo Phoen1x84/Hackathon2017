@@ -10,13 +10,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/zzzAfternoonDelight/AfternoonDelight.Feature.Media.config">
-      <publishTime>03/04/2017 16:50:00</publishTime>
+      <publishTime>03/04/2017 17:59:58</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.dll">
-      <publishTime>03/04/2017 17:51:01</publishTime>
+      <publishTime>03/04/2017 18:20:34</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.pdb">
-      <publishTime>03/04/2017 17:51:01</publishTime>
+      <publishTime>03/04/2017 18:20:34</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/04/2017 14:58:52</publishTime>
@@ -172,19 +172,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 14:59:01</publishTime>
     </File>
     <File Include="dist/css/hotspots.css">
-      <publishTime>03/04/2017 17:45:31</publishTime>
+      <publishTime>03/04/2017 18:16:56</publishTime>
     </File>
     <File Include="dist/css/hotspots.min.css">
-      <publishTime>03/04/2017 17:45:31</publishTime>
+      <publishTime>03/04/2017 18:16:56</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 17:45:30</publishTime>
+      <publishTime>03/04/2017 18:16:56</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js">
-      <publishTime>03/04/2017 17:45:30</publishTime>
+      <publishTime>03/04/2017 18:16:56</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js.map">
-      <publishTime>03/04/2017 17:45:30</publishTime>
+      <publishTime>03/04/2017 18:16:56</publishTime>
     </File>
     <File Include="gulpfile.js">
       <publishTime>03/04/2017 17:45:30</publishTime>
@@ -193,16 +193,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 16:50:00</publishTime>
     </File>
     <File Include="src/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 17:45:30</publishTime>
+      <publishTime>03/04/2017 17:59:58</publishTime>
     </File>
     <File Include="src/styles/hotspots.scss">
       <publishTime>03/04/2017 17:02:58</publishTime>
     </File>
     <File Include="src/styles/modules/_hotspots.scss">
-      <publishTime>03/04/2017 17:07:20</publishTime>
+      <publishTime>03/04/2017 18:16:46</publishTime>
     </File>
     <File Include="Views/HotspotImage/Hotspot Image.cshtml">
-      <publishTime>03/04/2017 17:58:52</publishTime>
+      <publishTime>03/04/2017 18:26:14</publishTime>
     </File>
   </ItemGroup>
 </Project>

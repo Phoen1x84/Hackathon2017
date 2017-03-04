@@ -1,6 +1,8 @@
 ﻿$hotspot-gray: #a9a9a9;
 $hotspot-white: #fff;
 $hotspot-shadow-color: #333;
+$red: #f00;
+$green: #288e06;
 
 
 @keyframes hotspot-dot-animation {
@@ -124,14 +126,11 @@ figure {
 
 
 .hotspot-item {
-    display: none;
+    display: flex;
     background: $hotspot-gray;
+    flex-direction: row;
+    flex-wrap: no-wrap;
 
-    &:first-child {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: no-wrap;
-    }
 
     &__icon {
         width: 150px;
@@ -143,4 +142,36 @@ figure {
     &__content {
         padding: 10px 20px;
     }
+}
+
+
+
+
+.hotspot-controls {
+    font-size: 16px;
+
+    &__activate {
+        background: $green;
+        color: $white;
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+        
+        &:hover {
+            background: darken($green, 10%);
+        }
+    }
+
+    &__deactivate {
+        background: $red;
+        color: $white;
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+            background: darken($red, 10%);
+        }
+    }
+
 }
