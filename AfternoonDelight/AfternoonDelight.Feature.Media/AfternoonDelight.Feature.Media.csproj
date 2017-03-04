@@ -216,7 +216,7 @@
     <Content Include="dist\scripts\hotspots.js" />
     <Content Include="dist\scripts\hotspots.min.js" />
     <Content Include="gulpfile.js" />
-    <Content Include="src\scripts\hotspots.js" />
+    <Content Include="src\scripts\component-hotspot.js" />
     <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />
     <Content Include="src\styles\hotspots.scss" />
     <Content Include="src\styles\modules\_hotspots.scss" />
