@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Sitecore.Data.Fields;
@@ -6,6 +7,10 @@ using Sitecore.XA.Foundation.Multisite;
 using Sitecore.XA.Foundation.Multisite.LinkManagers;
 using Sitecore.XA.Foundation.Mvc.Repositories.Base;
 using AfternoonDelight.Feature.Media.Models;
+using Sitecore.Data;
+using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using Sitecore.Exceptions;
 using Sitecore.XA.Foundation.SitecoreExtensions.Extensions;
 
 namespace AfternoonDelight.Feature.Media.Repositories
@@ -32,6 +37,43 @@ namespace AfternoonDelight.Feature.Media.Repositories
             }
 
             return hotspotImageRenderingModel;
+        }
+
+        public void CreateHotspot(ID hotspotImageId, HotspotModel hotspotModel, string databaseName)
+        {
+            Assert.ArgumentNotNull(hotspotImageId, nameof(hotspotImageId));
+            Assert.ArgumentNotNull(hotspotModel, nameof(hotspotModel));
+            Assert.ArgumentNotNull(databaseName, nameof(databaseName));
+
+            Database database = Sitecore.Data.Database.GetDatabase(databaseName);
+            if (database == null)
+            {
+                throw new DatabaseNullException();
+            }
+
+            Item hotspotImageItem = database.GetItem(hotspotImageId);
+            if (hotspotImageItem == null)
+            {
+                throw new ItemNotFoundException(hotspotImageId.ToString());
+            }
+
+            TemplateID templateId = new TemplateID(Templates.Hotspot.ID);
+
+            Item hotspotItem = hotspotImageItem.Add($"{hotspotModel.LocationX} - {hotspotModel.LocationY}", templateId);
+
+            try
+            {
+                hotspotItem.Editing.BeginEdit();
+                hotspotItem.Fields[Templates.Hotspot.Fields.LocationX].Value = hotspotModel.LocationX.ToString();
+                hotspotItem.Fields[Templates.Hotspot.Fields.LocationY].Value = hotspotModel.LocationY.ToString();
+                hotspotItem.Editing.EndEdit();
+            }
+            catch (Exception e)
+            {
+                hotspotItem.Editing.CancelEdit();
+                Log.Error(e.Message, e, this);
+                throw;
+            }
         }
 
         protected virtual IEnumerable<HotspotModel> GetHotspots()

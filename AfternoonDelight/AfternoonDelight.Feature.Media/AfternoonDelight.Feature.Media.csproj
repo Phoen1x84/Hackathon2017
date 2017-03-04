@@ -235,6 +235,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Controllers\HotspotImageController.cs" />
+    <Compile Include="Models\HotspotCoordinateViewModel.cs" />
     <Compile Include="Models\HotspotImageRenderingModel.cs" />
     <Compile Include="Models\HotspotModel.cs" />
     <Compile Include="Pipelines\IoC\RegisterAfternoonDelightMediaServices.cs" />

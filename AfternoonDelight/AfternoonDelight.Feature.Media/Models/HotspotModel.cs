@@ -21,6 +21,11 @@ namespace AfternoonDelight.Feature.Media.Models
         public MvcHtmlString Icon { get; set; }
         public string Description { get; set; }
 
+        public HotspotModel()
+        {
+            
+        }
+
         public HotspotModel(Item item)
         {
             if (item == null)
