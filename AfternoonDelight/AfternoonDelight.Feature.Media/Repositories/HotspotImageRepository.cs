@@ -65,13 +65,14 @@ namespace AfternoonDelight.Feature.Media.Repositories
 
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
-                string itemName = ItemUtil.ProposeValidItemName($"{hotspotModel.LocationX} {hotspotModel.LocationY}");
+                string itemName = ItemUtil.ProposeValidItemName(hotspotModel.Title);
 
                 Item hotspotItem = hotspotImageItem.Add(itemName, templateId);
 
                 try
                 {
                     hotspotItem.Editing.BeginEdit();
+                    hotspotItem.Fields[Templates.Hotspot.Fields.Title].Value = hotspotModel.Title;
                     hotspotItem.Fields[Templates.Hotspot.Fields.LocationX].Value = hotspotModel.LocationX.ToString();
                     hotspotItem.Fields[Templates.Hotspot.Fields.LocationY].Value = hotspotModel.LocationY.ToString();
                     hotspotItem.Editing.EndEdit();

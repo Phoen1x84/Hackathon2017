@@ -42,6 +42,12 @@ namespace AfternoonDelight.Feature.Media.Controllers
                 return Json(new ArgumentNullException(nameof(hotspotCoordinateViewModel.HotspotImageId)));
             }
 
+            if (string.IsNullOrEmpty(hotspotCoordinateViewModel.Title))
+            {
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                return Json(new ArgumentNullException(nameof(hotspotCoordinateViewModel.Title)));
+            }
+
             if (string.IsNullOrEmpty(hotspotCoordinateViewModel.DatabaseName))
             {
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
@@ -59,6 +65,7 @@ namespace AfternoonDelight.Feature.Media.Controllers
             {
                 LocationX = hotspotCoordinateViewModel.XLocation,
                 LocationY = hotspotCoordinateViewModel.YLocation,
+                Title = hotspotCoordinateViewModel.Title
             };
 
             try
