@@ -1,4 +1,4 @@
-﻿$hotspot-gray: #a9a9a9;
+﻿$hotspot-gray: #f1f1f1;
 $hotspot-white: #fff;
 $hotspot-shadow-color: #333;
 $red: #f00;
@@ -121,10 +121,6 @@ figure {
 }
 
 
-
-
-
-
 .hotspot-item {
     display: flex;
     background: $hotspot-gray;
@@ -149,6 +145,7 @@ figure {
 
 .hotspot-controls {
     font-size: 16px;
+    display: none;
 
     &__activate {
         background: darken($green, 10%);
@@ -159,7 +156,6 @@ figure {
 
         &:hover {
             background: $green;
-
         }
     }
 
@@ -173,5 +169,11 @@ figure {
         &:hover {
             background: $red;
         }
+    }
+}
+
+.on-page-editor {
+    .hotspot-controls {
+        display: block;
     }
 }

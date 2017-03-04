@@ -78,7 +78,7 @@ figure {
 .hotspot-item {
   display: -ms-flexbox;
   display: flex;
-  background: #a9a9a9;
+  background: #f1f1f1;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: no-wrap;
@@ -94,7 +94,8 @@ figure {
     padding: 10px 20px; }
 
 .hotspot-controls {
-  font-size: 16px; }
+  font-size: 16px;
+  display: none; }
   .hotspot-controls__activate {
     background: #1a5d04;
     color: #fff;
@@ -111,3 +112,6 @@ figure {
     display: inline-block; }
     .hotspot-controls__deactivate:hover {
       background: #f00; }
+
+.on-page-editor .hotspot-controls {
+  display: block; }
