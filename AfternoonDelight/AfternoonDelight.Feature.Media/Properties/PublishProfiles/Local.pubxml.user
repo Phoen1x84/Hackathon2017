@@ -10,16 +10,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/zzzAfternoonDelight/AfternoonDelight.Feature.Media.config">
-      <publishTime>03/04/2017 16:16:28</publishTime>
+      <publishTime>03/04/2017 17:52:31</publishTime>
     </File>
     <File Include="App_Config/Includes/zzzAfternoonDelight/AfternoonDelight.Feature.Media.config">
       <publishTime>04/03/2017 16:02:55</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.dll">
-      <publishTime>03/04/2017 17:41:33</publishTime>
+      <publishTime>03/04/2017 17:59:32</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.pdb">
-      <publishTime>03/04/2017 17:41:33</publishTime>
+      <publishTime>03/04/2017 17:59:32</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/04/2017 15:38:30</publishTime>
@@ -175,19 +175,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 15:38:38</publishTime>
     </File>
     <File Include="dist/css/hotspots.css">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:49:36</publishTime>
     </File>
     <File Include="dist/css/hotspots.min.css">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:49:36</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:49:36</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:49:36</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js.map">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:49:36</publishTime>
     </File>
     <File Include="dist/scripts/hotspots.js">
       <publishTime>03/04/2017 17:03:45</publishTime>
@@ -205,7 +205,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 15:40:29</publishTime>
     </File>
     <File Include="src/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 17:40:20</publishTime>
+      <publishTime>03/04/2017 17:59:21</publishTime>
     </File>
     <File Include="src/scripts/hotspots.js">
       <publishTime>03/04/2017 16:51:41</publishTime>
@@ -217,7 +217,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 17:09:58</publishTime>
     </File>
     <File Include="Views/HotspotImage/Hotspot Image.cshtml">
-      <publishTime>03/04/2017 17:40:57</publishTime>
+      <publishTime>03/04/2017 18:29:48</publishTime>
     </File>
     <File Include="Views/HotspotImage/HotspotImage.cshtml">
       <publishTime>04/03/2017 14:03:31</publishTime>
