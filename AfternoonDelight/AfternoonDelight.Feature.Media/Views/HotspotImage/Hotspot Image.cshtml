@@ -22,7 +22,7 @@
         <div class="js-hotspots">
             @foreach (HotspotModel hotspotModel in Model.Hotspots)
             {
-                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY ; left: @hotspotModel.LocationX ;">
+                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY% ; left: @hotspotModel.LocationX% ;">
                 </span>
             }
         </div>
@@ -45,12 +45,18 @@
     <div>
         @foreach (HotspotModel hotspotModel in Model.Hotspots)
         {
-            <div data-hotspot-image-id="@Model.Id">
-                @hotspotModel.Title
-                @Html.Raw(@hotspotModel.Description)
-                @hotspotModel.Icon
-                @hotspotModel.LocationX
-                @hotspotModel.LocationY
+            <div class="hotspot-item" data-hotspot-image-id="@Model.Id">
+                
+                <div class="hotspot-item__icon">
+                    @hotspotModel.Icon
+                </div>
+
+                <div class="hotspot-item__content">
+                    <h2>@hotspotModel.Title</h2>
+                    <div>
+                        @Html.Raw(@hotspotModel.Description)
+                    </div>
+                </div>
             </div>
         }
     </div>
