@@ -6,7 +6,8 @@
 
     let _eventListeners = () => {
         $(selectors.imageContainer).on('click', (e) => {
-            debugger;
+            e.preventDefault();
+            
             let $this = $(e.target);
             if ($this.hasClass('hotspot')) {
                 alert('You cannot add a hotspot to the same location');
@@ -54,7 +55,7 @@
 
     let _addHotspot = (x, y) => {        
         // this will be done after confirmation from sitecore that item is created
-        $('.js-hotspots').append('<span class="hotspot" style="top: ' + y + '%; left: ' + x + '%; "></span>');
+        $('.js-hotspots').append('<span class="hotspot-image__hotspot" style="top: ' + y + '%; left: ' + x + '%; "></span>');
     };
 
     let _activateHotspots = () => {
@@ -67,10 +68,10 @@
 
     let _deactivateHostpots = () => {
         $('.hotspots-controls__deactivate').on('click', (e) => {
-            debugger;
+            
             $(e.target).hide();
             $('.hotspots-controls__activate').show();
-            $('.hotspots__image').off('click');
+            $(selectors.imageContainer).off('click');
         });
     };
 
