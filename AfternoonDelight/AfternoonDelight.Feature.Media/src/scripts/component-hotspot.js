@@ -3,9 +3,13 @@
         root: '.hotspot-image',
         imageContainer: '.hotspot-image__image',
         hotspot: '.hotspot-image__hotspot',
-        hotspotInformation: 'TODO',
+        hotspotInformation: '.hotspot-item',
         scPageEditor: '.on-page-editor',
         scChromeElement: '.scEnabledChrome'
+    };
+
+    let classes = {
+        activeHotspot: 'hotspot-image__hotspot--active',
     };
 
     let _sendRequest = (x, y, title) => {
@@ -26,7 +30,7 @@
                 'DatabaseName': config.databaseName
             },
             success: function (data) {                
-                _addHotspot(x, y);
+                location.reload();
             },
             error: function (data) {
                 throw Error('Unable to POST event to the service');
@@ -41,10 +45,11 @@
 
 
     // show hide content item
-    let _toggleContentForHotspot = function ($hotspotWidget, $hotspot) {
+    let _toggleContentForHotspot = function ($hotspot) {
+        let $hotspotWidget = $hotspot.closest(selectors.root);
         let hotspotID = $hotspot.attr('data-hotspot-id');
         let $hotspotInformationItems = $hotspotWidget.find(selectors.hotspotInformation);
-        let $selectedHotspotContent = $hotspotInformationItems.filter('[data-hotspot-id=' + hotspotID + ']');
+        let $selectedHotspotContent = $hotspotInformationItems.filter(`[data-hotspot-id="${hotspotID}"]`);
 
         // if already active
         if ($hotspot.hasClass(classes.activeHotspot)) {
@@ -70,8 +75,7 @@
     };
 
     let _addAddHotspotEventListeners = () => {
-        $(`${selectors.imageContainer} ${scChromeElement}`).on('click', (e) => {
-            debugger;
+        $(`${selectors.imageContainer} ${selectors.scChromeElement}`).on('click', (e) => {
             e.preventDefault();
             let $this = $(e.target);
             if ($this.hasClass(selectors.hotspot)) {
@@ -95,39 +99,49 @@
     };
 
     let _addEventListeners = () => {
-        if ($('.on-page-editor').length) {
-            $(selectors.hotspot).on('click', function () {
+        if ($('.on-page-editor').length) {       
+            $('.hotspot-controls__activate').on('click', (e) => {
+                e.preventDefault();
+                $(e.target).hide();
+                $('.hotspot-controls__deactivate').show();
+                _addAddHotspotEventListeners();
+            });
+
+            $('.hotspot-controls__deactivate').on('click', (e) => {
+                e.preventDefault();
+                $(e.target).hide();
+                $('.hotspot-controls__activate').show();
+                //$(selectors.imageContainer).off('click');
+                // remove event listeners
+                $(`${selectors.imageContainer} ${selectors.scChromeElement}`).off('click');
+            });
+        } else {
+            $(selectors.hotspot).on('click', function (e) {
                 _toggleContentForHotspot($(e.target));
             });
-        };
-
-        $('.hotspot-controls__activate').on('click', (e) => {
-            e.preventDefault();
-            $(e.target).hide();
-            $('.hotspot-controls__deactivate').show();
-            _addAddHotspotEventListeners();
-        });
-
-        $('.hotspot-controls__deactivate').on('click', (e) => {
-            e.preventDefault();
-            $(e.target).hide();
-            $('.hotspot-controls__activate').show();
-            //$(selectors.imageContainer).off('click');
-            // remove event listeners
-            $(`${selectors.imageContainer} ${scChromeElement}`).off('click');
-        });
+        }
     };
 
     let _displayInitialState = () => {
+        // hide the deactivate button by default
+        $('.hotspot-controls__deactivate').hide();
+
         if (!$('.on-page-editor').length) {
-            // hide all dots
+            // remove all dot active states
+            let $hotspots = $(selectors.root).find(selectors.hotspot);
+            $hotspots.removeClass(classes.activeHotspot);
+
             // show first dot
-            // add active class to first dot
+            let $firstHotspot = $hotspots.first();
+            $firstHotspot.addClass(classes.activeHotspot);
+            let hotspotId = $firstHotspot.attr('data-hotspot-id');
+            $(selectors.hotspotInformation).hide();
+            $(selectors.hotspotInformation).filter(`[data-hotspot-id="${hotspotId}"]`).slideUp();
         };
     };
 
     let init = () => {
-        if ($(selectors.root).length && $(selectors.scPageEditor).length) {
+        if ($(selectors.root).length) {
             _addEventListeners();
             _displayInitialState();
         }
