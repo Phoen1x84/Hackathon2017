@@ -9,7 +9,7 @@ using System.Web.Routing;
 
 namespace AfternoonDelight
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    public class WebApiApplication : Sitecore.Web.Application
     {
         protected void Application_Start()
         {
