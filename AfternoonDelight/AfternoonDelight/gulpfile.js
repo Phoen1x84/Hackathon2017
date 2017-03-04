@@ -15,6 +15,7 @@ const handlebars = require('gulp-handlebars');
 const wrap = require('gulp-wrap');
 const declare = require('gulp-declare');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
 
 // config
 var paths = {
@@ -134,6 +135,13 @@ gulp.task('eslint', function () {
         // eslint() attaches the lint output to the "eslint" property
         // of the file object so it can be used by other modules.
         .pipe(eslint({
+            "parserOptions": {
+                "ecmaVersion": 6,
+                "sourceType": "module",
+                "ecmaFeatures": {
+                    "jsx": true
+                }
+            },
             rules: {
                 'eqeqeq': 'off',
                 'semi': ['error', 'always'],
@@ -180,6 +188,9 @@ gulp.task('compile-js', function () {
         .pipe(sourcemaps.init())
         .pipe(concat({
             path: 'main.js'
+        }))
+        .pipe(babel({
+            presets: ['es2015']
         }))
         .pipe(gulp.dest(paths.dist.scripts))
         .pipe(rename({
