@@ -27,12 +27,15 @@
     
     <div class="hotspot-image__image">
         @Model.Image
-        
+
         <div class="js-hotspots">
-            @foreach (HotspotModel hotspotModel in Model.Hotspots)
+            @if (Model.Hotspots != null)
             {
-                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY% ; left: @hotspotModel.LocationX% ;" data-hotspot-id="@hotspotModel.Id">
+                foreach (HotspotModel hotspotModel in Model.Hotspots)
+                 {
+                     <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY%; left: @hotspotModel.LocationX%;" data-hotspot-id="@hotspotModel.Id">
                 </span>
+                 }
             }
         </div>
     </div>
@@ -52,37 +55,40 @@
     </div>
 
     <div class="hotspot-item-container">
-        @foreach (HotspotModel hotspotModel in Model.Hotspots)
+        @if (Model.Hotspots != null)
         {
-            <div class="hotspot-item" data-hotspot-id="@hotspotModel.Id">
-                
-                <div class="hotspot-item__icon">
-                    @hotspotModel.Icon
-                </div>
+            foreach (HotspotModel hotspotModel in Model.Hotspots)
+             {
+                 <div class="hotspot-item" data-hotspot-id="@hotspotModel.Id">
 
-                <div class="hotspot-item__content">
-                    <h2>
-                        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
-                        {
-                            @Html.Sitecore().Field("Title", hotspotModel.Item)
-                        }
-                        else
-                        {
-                            @Html.Raw(hotspotModel.Title)
-                        }
-                    </h2>
-                    <div>
-                        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
-                        {
-                            @Html.Sitecore().Field("Description", hotspotModel.Item)
-                        }
-                        else
-                        {
-                            @Html.Raw(hotspotModel.Description)
-                        }
-                    </div>
-                </div>
-            </div>
+                     <div class="hotspot-item__icon">
+                         @hotspotModel.Icon
+                     </div>
+
+                     <div class="hotspot-item__content">
+                         <h2>
+                             @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                             {
+                                 @Html.Sitecore().Field("Title", hotspotModel.Item)
+                             }
+                             else
+                             {
+                                 @Html.Raw(hotspotModel.Title)
+                             }
+                         </h2>
+                         <div>
+                             @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                             {
+                                 @Html.Sitecore().Field("Description", hotspotModel.Item)
+                             }
+                             else
+                             {
+                                 @Html.Raw(hotspotModel.Description)
+                             }
+                         </div>
+                     </div>
+                 </div>
+             }
         }
     </div>
 </div>
