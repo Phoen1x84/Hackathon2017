@@ -36,10 +36,10 @@ namespace AfternoonDelight.Feature.Media.Controllers
                 return Json(new ArgumentNullException(nameof(hotspotCoordinateViewModel)));
             }
 
-            if (string.IsNullOrEmpty(hotspotCoordinateViewModel.HostspotImageId))
+            if (string.IsNullOrEmpty(hotspotCoordinateViewModel.HotspotImageId))
             {
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return Json(new ArgumentNullException(nameof(hotspotCoordinateViewModel.HostspotImageId)));
+                return Json(new ArgumentNullException(nameof(hotspotCoordinateViewModel.HotspotImageId)));
             }
 
             if (string.IsNullOrEmpty(hotspotCoordinateViewModel.DatabaseName))
@@ -49,10 +49,10 @@ namespace AfternoonDelight.Feature.Media.Controllers
             }
 
             ID hotspotImageId;
-            if (!ID.TryParse(hotspotCoordinateViewModel.HostspotImageId, out hotspotImageId))
+            if (!ID.TryParse(hotspotCoordinateViewModel.HotspotImageId, out hotspotImageId))
             {
                 Response.StatusCode = (int) HttpStatusCode.BadRequest;
-                return Json(new InvalidCastException($"{nameof(hotspotCoordinateViewModel.HostspotImageId)} should be a valid Sitecore ID"));
+                return Json(new InvalidCastException($"{nameof(hotspotCoordinateViewModel.HotspotImageId)} should be a valid Sitecore ID"));
             }
 
             var hotspotModel = new HotspotModel()
@@ -84,6 +84,11 @@ namespace AfternoonDelight.Feature.Media.Controllers
                 Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 return Json(e);
             }
+        }
+
+        public JsonResult Test()
+        {
+            return Json("Test");
         }
     }
 }

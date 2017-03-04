@@ -12,7 +12,7 @@
     <a href="#" class="hotspots-controls__activate">Add hotspot</a>
     <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
 </div>
-<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes)>
+<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes) data-hotspot-id="">
     @Model.MessageIsEmpty
     <h2>@Model.ImageTitle</h2>
     
