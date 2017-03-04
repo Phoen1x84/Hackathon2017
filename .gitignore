@@ -35,3 +35,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+/AfternoonDelight/AfternoonDelight/bin
+/AfternoonDelight/AfternoonDelight.Feature.Media/bin
+/AfternoonDelight/.vs
+/AfternoonDelight/AfternoonDelight/obj
+/AfternoonDelight/AfternoonDelight.Feature.Media/obj
+/AfternoonDelight/AfternoonDelight.Tests/bin
+/AfternoonDelight/AfternoonDelight.Tests/obj
