@@ -286,6 +286,7 @@
     </Content>
     <Content Include="App_Config\ConnectionStrings.config" />
     <Content Include="package.json" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="dist\scripts\main.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -319,6 +320,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="dist\" />
     <Folder Include="src\fonts\" />
     <Folder Include="src\images\" />
     <Folder Include="src\scripts\modules\" />
