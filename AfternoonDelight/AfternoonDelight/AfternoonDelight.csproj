@@ -337,6 +337,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="src\styles\hotspots.scss" />
+    <Content Include="src\styles\modules\_hotspots.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -346,7 +347,6 @@
     <Folder Include="src\scripts\utilities\" />
     <Folder Include="src\scripts\vendor\" />
     <Folder Include="src\styles\core\" />
-    <Folder Include="src\styles\modules\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -203,23 +203,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dist\css\hotspots.css" />
-    <Content Include="dist\css\hotspots.min.css" />
-    <Content Include="dist\scripts\hotspots.js" />
-    <Content Include="dist\scripts\hotspots.min.js" />
-    <Content Include="gulpfile.js" />
-    <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
+    <None Include="packages.config" />
+    <None Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="src\scripts\hotspots.js" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    </None>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\HotspotImage\HotspotImage.cshtml" />
-    <Content Include="Views\Web.config" />
-    <Content Include="src\styles\hotspots.scss" />
-    <Content Include="dist\scripts\hotspots.min.js.map" />
-    <Content Include="package.json" />
+    <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />
+    <None Include="Views\Web.config" />
+    <Content Include="App_Config\Include\zzzAfternoonDelight\AfternoonDelight.Feature.Media.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -228,7 +221,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
@@ -244,15 +237,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\fonts\" />
-    <Folder Include="src\images\" />
-    <Folder Include="src\scripts\modules\" />
-    <Folder Include="src\scripts\utilities\" />
-    <Folder Include="src\scripts\vendor\" />
-    <Folder Include="src\styles\core\" />
-    <Folder Include="src\styles\modules\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

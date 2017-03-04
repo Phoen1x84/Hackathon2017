@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
 using Sitecore.Data.Fields;
 using Sitecore.XA.Foundation.Multisite;
 using Sitecore.XA.Foundation.Multisite.LinkManagers;
@@ -16,12 +17,19 @@ namespace AfternoonDelight.Feature.Media.Repositories
             var hotspotImageRenderingModel = new HotspotImageRenderingModel();
 
             FillBaseProperties(hotspotImageRenderingModel);
-            hotspotImageRenderingModel.HasImageDescription = HasImageDescription();
 
-            List<HotspotModel> hotspots = GetHotspots().ToList();
+            if (Rendering.DataSourceItem != null)
+            {
+                hotspotImageRenderingModel.Image = new MvcHtmlString(Sitecore.Web.UI.WebControls.FieldRenderer.Render(Rendering.DataSourceItem, nameof(Templates.Hotspot.Fields.Icon)));
+                hotspotImageRenderingModel.ImageTitle = Rendering.DataSourceItem[Templates.HotspotImage.Fields.ImageTitle];
+                hotspotImageRenderingModel.ImageDescription = Rendering.DataSourceItem[Templates.HotspotImage.Fields.ImageDescription];
+                hotspotImageRenderingModel.HasImageDescription = HasImageDescription();
 
-            hotspotImageRenderingModel.Hotspots = hotspots;
-            hotspotImageRenderingModel.HasHotspots = hotspots.Any();
+                List<HotspotModel> hotspots = GetHotspots().ToList();
+
+                hotspotImageRenderingModel.Hotspots = hotspots;
+                hotspotImageRenderingModel.HasHotspots = hotspots.Any();
+            }
 
             return hotspotImageRenderingModel;
         }
