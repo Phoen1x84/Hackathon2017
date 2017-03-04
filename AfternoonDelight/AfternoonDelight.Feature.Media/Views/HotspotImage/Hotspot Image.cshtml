@@ -8,11 +8,11 @@
 
 @model AfternoonDelight.Feature.Media.Models.HotspotImageRenderingModel
 
-<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes) data-hotspot-image-id="@Model.Id" data-database-name="@Model.DatabaseName">
-    <div class="hotspots-controls">
-        <a href="#" class="hotspots-controls__activate">Add hotspot</a>
-        <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
-    </div>
+<div class="hotspots-controls">
+    <a href="#" class="hotspots-controls__activate">Add hotspot</a>
+    <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
+</div>
+<div class="hotspot-image" @Html.Sxa().Component("hotspot-image", Model.Attributes) data-hotspot-image-id="@Model.Id" data-database-name="@Model.DatabaseName">
     @Model.MessageIsEmpty
     <h2>@Model.ImageTitle</h2>
     
@@ -22,7 +22,7 @@
         <div class="js-hotspots">
             @foreach (HotspotModel hotspotModel in Model.Hotspots)
             {
-                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY ; left: @hotspotModel.LocationX ;">
+                <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY% ; left: @hotspotModel.LocationX% ;" data-hotspot-id="@hotspotModel.Id">
                 </span>
             }
         </div>
@@ -45,12 +45,18 @@
     <div>
         @foreach (HotspotModel hotspotModel in Model.Hotspots)
         {
-            <div data-hotspot-image-id="@Model.Id">
-                @hotspotModel.Title
-                @Html.Raw(@hotspotModel.Description)
-                @hotspotModel.Icon
-                @hotspotModel.LocationX
-                @hotspotModel.LocationY
+            <div class="hotspot-item" data-hotspot-id="@hotspotModel.Id">
+                
+                <div class="hotspot-item__icon">
+                    @hotspotModel.Icon
+                </div>
+
+                <div class="hotspot-item__content">
+                    <h2>@hotspotModel.Title</h2>
+                    <div>
+                        @Html.Raw(@hotspotModel.Description)
+                    </div>
+                </div>
             </div>
         }
     </div>

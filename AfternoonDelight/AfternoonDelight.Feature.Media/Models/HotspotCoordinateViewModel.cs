@@ -10,9 +10,9 @@ namespace AfternoonDelight.Feature.Media.Models
     {
         public string HotspotImageId { get; set; }
         [Range(0, 100)]
-        public int XLocation { get; set; }
+        public double XLocation { get; set; }
         [Range(0, 100)]
-        public int YLocation { get; set; }
+        public double YLocation { get; set; }
         public string DatabaseName { get; set; }
     }
 }
