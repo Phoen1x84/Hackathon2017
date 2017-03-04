@@ -7,6 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfternoonDelight", "Afterno
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfternoonDelight.Tests", "AfternoonDelight.Tests\AfternoonDelight.Tests.csproj", "{A1C6E9FB-B086-4DA7-9CA8-6519D609AADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfternoonDelight.Feature.Media", "AfternoonDelight.Feature.Media\AfternoonDelight.Feature.Media.csproj", "{6A9F2BE6-82D8-4C64-B76D-701F4289D9D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{03E71C86-AEC1-4D83-8DF6-38BBADA12973}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Sitecore.XA.Foundation.Multisite.dll = Lib\Sitecore.XA.Foundation.Multisite.dll
+		Lib\Sitecore.XA.Foundation.Mvc.dll = Lib\Sitecore.XA.Foundation.Mvc.dll
+		Lib\Sitecore.XA.Foundation.SitecoreExtensions.dll = Lib\Sitecore.XA.Foundation.SitecoreExtensions.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +30,10 @@ Global
 		{A1C6E9FB-B086-4DA7-9CA8-6519D609AADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C6E9FB-B086-4DA7-9CA8-6519D609AADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C6E9FB-B086-4DA7-9CA8-6519D609AADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9F2BE6-82D8-4C64-B76D-701F4289D9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9F2BE6-82D8-4C64-B76D-701F4289D9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9F2BE6-82D8-4C64-B76D-701F4289D9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9F2BE6-82D8-4C64-B76D-701F4289D9D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
