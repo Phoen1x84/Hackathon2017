@@ -10,6 +10,7 @@ namespace AfternoonDelight.Feature.Media.Models
 {
     public class HotspotImageRenderingModel : RenderingModelBase
     {
+        public string Id { get; set; }
         public MvcHtmlString Image { get; set; }
         public string ImageTitle { get; set; }
         public string ImageDescription { get; set; }

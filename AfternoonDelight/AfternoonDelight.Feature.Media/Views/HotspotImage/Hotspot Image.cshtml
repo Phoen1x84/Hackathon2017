@@ -19,17 +19,12 @@
             @foreach (HotspotModel hotspotModel in Model.Hotspots)
             {
                 <span class="hotspot-image__hotspot" style="top: @hotspotModel.LocationY ; left: @hotspotModel.LocationX ;">
-                    @hotspotModel.Title
-                    @hotspotModel.Description
-                    @hotspotModel.Icon
-                    @hotspotModel.LocationX
-                    @hotspotModel.LocationY
                 </span>
             }
         </div>
     </div>
 
-    <div class="hotspot-image__description">
+    <div class="hotspot-image__description" data-hotspot-image-id="@Model.Id">
         @if (Model.HasImageDescription || (!Model.HasImageDescription && Html.Sxa().IsEdit))
         {
             if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
@@ -46,9 +41,9 @@
     <div>
         @foreach (HotspotModel hotspotModel in Model.Hotspots)
         {
-            <div>
+            <div data-hotspot-image-id="@Model.Id">
                 @hotspotModel.Title
-                @hotspotModel.Description
+                @Html.Raw(@hotspotModel.Description)
                 @hotspotModel.Icon
                 @hotspotModel.LocationX
                 @hotspotModel.LocationY
