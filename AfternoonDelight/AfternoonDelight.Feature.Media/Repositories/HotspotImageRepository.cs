@@ -25,6 +25,7 @@ namespace AfternoonDelight.Feature.Media.Repositories
 
             if (Rendering.DataSourceItem != null)
             {
+                hotspotImageRenderingModel.Id = Rendering.DataSourceItem.ID.ToString();
                 hotspotImageRenderingModel.Image = new MvcHtmlString(Sitecore.Web.UI.WebControls.FieldRenderer.Render(Rendering.DataSourceItem, nameof(Templates.HotspotImage.Fields.Image)));
                 hotspotImageRenderingModel.ImageTitle = Rendering.DataSourceItem[Templates.HotspotImage.Fields.ImageTitle];
                 hotspotImageRenderingModel.ImageDescription = Rendering.DataSourceItem[Templates.HotspotImage.Fields.ImageDescription];
