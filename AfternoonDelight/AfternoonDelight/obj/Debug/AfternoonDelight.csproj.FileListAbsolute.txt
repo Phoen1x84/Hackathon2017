@@ -104,6 +104,6 @@ C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\bin\M
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\bin\System.Web.Http.Owin.xml
-C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\obj\Debug\AfternoonDelight.csprojResolveAssemblyReference.cache
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\obj\Debug\AfternoonDelight.dll
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\obj\Debug\AfternoonDelight.pdb
+C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight\obj\Debug\AfternoonDelight.csprojResolveAssemblyReference.cache

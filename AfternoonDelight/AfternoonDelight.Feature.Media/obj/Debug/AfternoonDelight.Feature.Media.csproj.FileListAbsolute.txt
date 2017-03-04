@@ -1,4 +1,3 @@
-C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\obj\Debug\AfternoonDelight.Feature.Media.csprojResolveAssemblyReference.cache
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\ApplicationInsights.config
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\roslyn\csc.exe
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -49,8 +48,6 @@ C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Featu
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\System.Web.WebPages.dll
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\System.Web.WebPages.Razor.dll
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\WebActivatorEx.dll
-C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\System.Reflection.dll
-C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\System.Runtime.Extensions.dll
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\HtmlAgilityPack.pdb
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\HtmlAgilityPack.xml
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\Lucene.Net.pdb
@@ -74,3 +71,6 @@ C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Featu
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\System.Web.WebPages.Razor.xml
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\obj\Debug\AfternoonDelight.Feature.Media.dll
 C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\obj\Debug\AfternoonDelight.Feature.Media.pdb
+C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\Sitecore.XA.Foundation.IoC.dll
+C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\bin\Sitecore.XA.Foundation.MarkupDecorator.dll
+C:\Development\Webprojects\Hackathon2017\AfternoonDelight\AfternoonDelight.Feature.Media\obj\Debug\AfternoonDelight.Feature.Media.csprojResolveAssemblyReference.cache

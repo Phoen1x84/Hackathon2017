@@ -18,7 +18,7 @@ namespace AfternoonDelight.Feature.Media.Repositories
             FillBaseProperties(hotspotImageRenderingModel);
             hotspotImageRenderingModel.HasImageDescription = HasImageDescription();
 
-            List<HotspotModel> hotspots = GetHotspots();
+            List<HotspotModel> hotspots = GetHotspots().ToList();
 
             hotspotImageRenderingModel.Hotspots = hotspots;
             hotspotImageRenderingModel.HasHotspots = hotspots.Any();
@@ -26,11 +26,13 @@ namespace AfternoonDelight.Feature.Media.Repositories
             return hotspotImageRenderingModel;
         }
 
-        protected virtual List<HotspotModel> GetHotspots()
+        protected virtual IEnumerable<HotspotModel> GetHotspots()
         {
             if (Rendering.DataSourceItem != null && Rendering.DataSourceItem.Children.Any(c => c.TemplateID.Equals(Templates.Hotspot.ID)))
             {
-                
+                return Rendering.DataSourceItem.Children
+                        .Where(c => c.TemplateID.Equals(Templates.Hotspot.ID))
+                        .Select(c => new HotspotModel(c));
             }
 
             return null;
