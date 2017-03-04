@@ -33,7 +33,15 @@
     }
 }
 
+
+
+figure {
+    margin: 0;
+}
+
 .hotspot-image {
+    display: block;
+
     &__image {
         position: relative;
     }
@@ -97,4 +105,40 @@
             transform: scale(2);
         }
     }
+
+
+    &__description {
+        padding: 10px 20px;
+    }
+
+    &__hotspots {
+        display: block;
+    }
+}
+
+
+
+
+
+
+.hotspot-item {
+  display: none;
+  background: #a9a9a9;
+  
+  &:first-child {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+  }
+  
+  &__icon {
+    width: 150px;
+    height: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  &__content {
+    padding: 10px 20px;
+  }
 }
