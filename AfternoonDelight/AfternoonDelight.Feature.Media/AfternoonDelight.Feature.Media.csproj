@@ -217,7 +217,6 @@
     <Content Include="dist\scripts\hotspots.min.js" />
     <Content Include="gulpfile.js" />
     <Content Include="src\scripts\hotspots.js" />
-    <Content Include="Views\HotspotImage\HotspotImage.cshtml" />
     <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />
     <Content Include="src\styles\hotspots.scss" />
     <None Include="Views\Web.config" />
@@ -235,6 +234,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Controllers\HotspotImageController.cs" />
+    <Compile Include="Models\HotspotCoordinateViewModel.cs" />
     <Compile Include="Models\HotspotImageRenderingModel.cs" />
     <Compile Include="Models\HotspotModel.cs" />
     <Compile Include="Pipelines\IoC\RegisterAfternoonDelightMediaServices.cs" />
