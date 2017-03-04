@@ -26,6 +26,8 @@ figure {
   display: block; }
   .hotspot-image__image {
     position: relative; }
+    .hotspot-image__image img {
+      display: block; }
   .hotspot-image__hotspot {
     position: absolute;
     display: inline-block;
@@ -71,7 +73,9 @@ figure {
       -ms-transform: scale(2);
       transform: scale(2); }
   .hotspot-image__description {
-    padding: 10px 20px; }
+    background: #222;
+    color: #fff;
+    padding: 20px; }
   .hotspot-image__hotspots {
     display: block; }
 

@@ -3,6 +3,7 @@ $hotspot-white: #fff;
 $hotspot-shadow-color: #333;
 $red: #f00;
 $green: #288e06;
+$black: #222;
 
 
 @keyframes hotspot-dot-animation {
@@ -51,6 +52,10 @@ figure {
 
     &__image {
         position: relative;
+
+        img {
+            display: block;
+        }
     }
 
     &__hotspot {
@@ -112,7 +117,9 @@ figure {
 
 
     &__description {
-        padding: 10px 20px;
+        background: $black;
+        color: $hotspot-white;
+        padding: 20px;
     }
 
     &__hotspots {
