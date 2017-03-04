@@ -13,22 +13,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 17:59:58</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.dll">
-      <publishTime>03/04/2017 20:14:51</publishTime>
+      <publishTime>03/04/2017 20:28:49</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.pdb">
-      <publishTime>03/04/2017 20:14:50</publishTime>
+      <publishTime>03/04/2017 20:28:49</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/04/2017 14:58:52</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
-      <publishTime>06/08/2012 21:31:50</publishTime>
+      <publishTime>03/04/2017 14:58:53</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.pdb">
-      <publishTime>06/08/2012 21:31:50</publishTime>
+      <publishTime>03/04/2017 14:58:53</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
-      <publishTime>03/01/2011 14:16:38</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
       <publishTime>03/04/2017 14:58:53</publishTime>
@@ -40,22 +40,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>07/12/2016 11:45:42</publishTime>
+      <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>07/12/2016 11:50:34</publishTime>
+      <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>06/12/2016 15:15:48</publishTime>
+      <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>07/12/2016 11:49:10</publishTime>
+      <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>07/12/2016 11:50:34</publishTime>
+      <publishTime>03/04/2017 10:20:43</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>06/12/2016 15:09:52</publishTime>
+      <publishTime>03/04/2017 10:20:42</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>03/04/2017 10:20:44</publishTime>
@@ -70,7 +70,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 10:20:45</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>04/03/2017 14:58:54</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/RazorGenerator.Mvc.dll">
       <publishTime>03/04/2017 14:58:54</publishTime>
@@ -112,19 +112,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 10:20:45</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
-      <publishTime>03/01/2017 09:34:38</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.Client.dll">
-      <publishTime>03/01/2017 09:35:22</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.dll">
-      <publishTime>03/01/2017 09:35:26</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Mvc.dll">
-      <publishTime>03/01/2017 09:36:16</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Sitecore.NVelocity.dll">
-      <publishTime>03/01/2017 09:36:32</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/Sitecore.XA.Foundation.IoC.dll">
       <publishTime>03/04/2017 14:58:53</publishTime>
@@ -142,7 +142,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 14:58:53</publishTime>
     </File>
     <File Include="bin/Sitecore.Zip.dll">
-      <publishTime>03/01/2017 09:42:22</publishTime>
+      <publishTime>03/04/2017 14:58:54</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>03/04/2017 10:20:44</publishTime>
@@ -169,22 +169,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 10:20:44</publishTime>
     </File>
     <File Include="bin/WebActivatorEx.dll">
-      <publishTime>06/08/2013 13:07:26</publishTime>
+      <publishTime>03/04/2017 14:59:01</publishTime>
     </File>
     <File Include="dist/css/hotspots.css">
-      <publishTime>03/04/2017 20:10:20</publishTime>
+      <publishTime>03/04/2017 20:18:26</publishTime>
     </File>
     <File Include="dist/css/hotspots.min.css">
-      <publishTime>03/04/2017 19:57:17</publishTime>
+      <publishTime>03/04/2017 20:18:27</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 19:57:01</publishTime>
+      <publishTime>03/04/2017 20:18:26</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js">
-      <publishTime>03/04/2017 19:57:01</publishTime>
+      <publishTime>03/04/2017 20:18:27</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js.map">
-      <publishTime>03/04/2017 19:57:17</publishTime>
+      <publishTime>03/04/2017 20:18:27</publishTime>
     </File>
     <File Include="gulpfile.js">
       <publishTime>03/04/2017 17:45:30</publishTime>
@@ -193,16 +193,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 16:50:00</publishTime>
     </File>
     <File Include="src/scripts/component-hotspot.js">
-      <publishTime>03/04/2017 19:57:01</publishTime>
+      <publishTime>03/04/2017 20:18:19</publishTime>
     </File>
     <File Include="src/styles/hotspots.scss">
       <publishTime>03/04/2017 17:02:58</publishTime>
     </File>
     <File Include="src/styles/modules/_hotspots.scss">
-      <publishTime>03/04/2017 20:10:20</publishTime>
+      <publishTime>03/04/2017 20:18:18</publishTime>
     </File>
     <File Include="Views/HotspotImage/Hotspot Image.cshtml">
-      <publishTime>03/04/2017 20:07:56</publishTime>
+      <publishTime>03/04/2017 20:28:39</publishTime>
     </File>
   </ItemGroup>
 </Project>
