@@ -183,11 +183,11 @@ gulp.task('compile-js', function () {
             paths.src.scripts + 'modules/**/*.js',
             paths.src.scripts + 'partials.js',
             paths.src.scripts + 'templates.js',
-            paths.src.scripts + 'hotspots.js',
+            paths.src.scripts + 'component-hotspot.js',
     ])
         .pipe(sourcemaps.init())
         .pipe(concat({
-            path: 'hotspots.js'
+            path: 'component-hotspot.js'
         }))
         .pipe(babel({
             presets: ['es2015']
