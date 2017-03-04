@@ -64,7 +64,7 @@
                     <h2>
                         @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
                         {
-                            @Html.Sitecore().Field("Title", Model.GetRenderingWebEditingParams())
+                            @Html.Sitecore().Field("Title", hotspotModel.Item)
                         }
                         else
                         {
@@ -74,11 +74,11 @@
                     <div>
                         @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
                         {
-                            @Html.Sitecore().Field("Description", Model.GetRenderingWebEditingParams())
+                            @Html.Sitecore().Field("Description", hotspotModel.Item)
                         }
                         else
                         {
-                            @Html.Raw(@hotspotModel.Description)
+                            @Html.Raw(hotspotModel.Description)
                         }
                     </div>
                 </div>

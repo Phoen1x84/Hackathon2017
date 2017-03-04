@@ -16,6 +16,7 @@ namespace AfternoonDelight.Feature.Media.Models
     public class HotspotModel
     {
         public string Id { get; set; }
+        public Item Item { get; set; }
         public double LocationX { get; set; }
         public double LocationY { get; set; }
         public string Title { get; set; }
@@ -35,6 +36,7 @@ namespace AfternoonDelight.Feature.Media.Models
             }
 
             Id = item.ID.ToString();
+            Item = item;
 
             double locationX;
             if (double.TryParse(item[Templates.Hotspot.Fields.LocationX], out locationX))

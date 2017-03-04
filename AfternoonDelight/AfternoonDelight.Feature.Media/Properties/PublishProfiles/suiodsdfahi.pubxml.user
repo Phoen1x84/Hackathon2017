@@ -13,10 +13,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 17:23:12</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.dll">
-      <publishTime>03/04/2017 19:33:19</publishTime>
+      <publishTime>03/04/2017 20:08:06</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.pdb">
-      <publishTime>03/04/2017 19:33:19</publishTime>
+      <publishTime>03/04/2017 20:08:06</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/04/2017 11:58:55</publishTime>
@@ -172,10 +172,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/06/2013 13:07:26</publishTime>
     </File>
     <File Include="dist/css/hotspots.css">
-      <publishTime>03/04/2017 19:33:08</publishTime>
+      <publishTime>03/04/2017 19:57:17</publishTime>
     </File>
     <File Include="dist/css/hotspots.min.css">
-      <publishTime>03/04/2017 19:33:08</publishTime>
+      <publishTime>03/04/2017 19:57:17</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.js">
       <publishTime>03/04/2017 19:33:08</publishTime>
@@ -184,7 +184,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 19:33:08</publishTime>
     </File>
     <File Include="dist/scripts/component-hotspot.min.js.map">
-      <publishTime>03/04/2017 19:33:08</publishTime>
+      <publishTime>03/04/2017 19:57:17</publishTime>
     </File>
     <File Include="gulpfile.js">
       <publishTime>03/04/2017 17:14:14</publishTime>
@@ -199,10 +199,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 17:08:43</publishTime>
     </File>
     <File Include="src/styles/modules/_hotspots.scss">
-      <publishTime>03/04/2017 19:33:08</publishTime>
+      <publishTime>03/04/2017 19:57:17</publishTime>
     </File>
     <File Include="Views/HotspotImage/Hotspot Image.cshtml">
-      <publishTime>03/04/2017 19:33:08</publishTime>
+      <publishTime>03/04/2017 20:07:56</publishTime>
     </File>
   </ItemGroup>
 </Project>
