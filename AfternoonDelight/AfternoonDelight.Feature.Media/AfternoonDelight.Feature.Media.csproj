@@ -203,8 +203,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dist\scripts\hotspots.min.js.map" />
+    <Content Include="dist\scripts\component-hotspot.js" />
+    <Content Include="dist\scripts\component-hotspot.min.js" />
     <Content Include="package.json" />
+    <Content Include="dist\scripts\component-hotspot.min.js.map" />
     <None Include="packages.config" />
     <None Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -213,8 +215,6 @@
     <None Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="dist\css\hotspots.css" />
     <Content Include="dist\css\hotspots.min.css" />
-    <Content Include="dist\scripts\hotspots.js" />
-    <Content Include="dist\scripts\hotspots.min.js" />
     <Content Include="gulpfile.js" />
     <Content Include="src\scripts\component-hotspot.js" />
     <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />

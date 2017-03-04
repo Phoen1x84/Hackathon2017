@@ -16,10 +16,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2017 16:02:55</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.dll">
-      <publishTime>03/04/2017 16:58:36</publishTime>
+      <publishTime>03/04/2017 17:11:50</publishTime>
     </File>
     <File Include="bin/AfternoonDelight.Feature.Media.pdb">
-      <publishTime>03/04/2017 16:58:36</publishTime>
+      <publishTime>03/04/2017 17:11:50</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/04/2017 15:38:30</publishTime>
@@ -127,7 +127,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 15:38:32</publishTime>
     </File>
     <File Include="bin/Sitecore.NVelocity.dll">
-      <publishTime>03/01/2017 09:36:32</publishTime>
+      <publishTime>01/03/2017 09:36:32</publishTime>
     </File>
     <File Include="bin/Sitecore.XA.Foundation.IoC.dll">
       <publishTime>03/04/2017 15:38:30</publishTime>
@@ -175,34 +175,49 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/04/2017 15:38:38</publishTime>
     </File>
     <File Include="dist/css/hotspots.css">
-      <publishTime>03/04/2017 16:51:41</publishTime>
+      <publishTime>03/04/2017 17:19:33</publishTime>
     </File>
     <File Include="dist/css/hotspots.min.css">
-      <publishTime>03/04/2017 16:51:41</publishTime>
+      <publishTime>03/04/2017 17:19:33</publishTime>
+    </File>
+    <File Include="dist/scripts/component-hotspot.js">
+      <publishTime>03/04/2017 17:27:53</publishTime>
+    </File>
+    <File Include="dist/scripts/component-hotspot.min.js">
+      <publishTime>03/04/2017 17:27:53</publishTime>
+    </File>
+    <File Include="dist/scripts/component-hotspot.min.js.map">
+      <publishTime>03/04/2017 17:27:53</publishTime>
     </File>
     <File Include="dist/scripts/hotspots.js">
-      <publishTime>03/04/2017 16:51:41</publishTime>
+      <publishTime>03/04/2017 17:03:45</publishTime>
     </File>
     <File Include="dist/scripts/hotspots.min.js">
-      <publishTime>03/04/2017 16:51:41</publishTime>
+      <publishTime>03/04/2017 17:03:45</publishTime>
     </File>
     <File Include="dist/scripts/hotspots.min.js.map">
-      <publishTime>03/04/2017 16:51:41</publishTime>
+      <publishTime>03/04/2017 17:03:45</publishTime>
     </File>
     <File Include="gulpfile.js">
-      <publishTime>03/04/2017 15:40:29</publishTime>
+      <publishTime>03/04/2017 17:08:30</publishTime>
     </File>
     <File Include="package.json">
       <publishTime>03/04/2017 15:40:29</publishTime>
+    </File>
+    <File Include="src/scripts/component-hotspot.js">
+      <publishTime>03/04/2017 17:19:33</publishTime>
     </File>
     <File Include="src/scripts/hotspots.js">
       <publishTime>03/04/2017 16:51:41</publishTime>
     </File>
     <File Include="src/styles/hotspots.scss">
-      <publishTime>03/04/2017 15:40:29</publishTime>
+      <publishTime>03/04/2017 17:09:58</publishTime>
+    </File>
+    <File Include="src/styles/modules/_hotspots.scss">
+      <publishTime>03/04/2017 17:09:58</publishTime>
     </File>
     <File Include="Views/HotspotImage/Hotspot Image.cshtml">
-      <publishTime>03/04/2017 16:52:31</publishTime>
+      <publishTime>03/04/2017 17:33:09</publishTime>
     </File>
     <File Include="Views/HotspotImage/HotspotImage.cshtml">
       <publishTime>04/03/2017 14:03:31</publishTime>

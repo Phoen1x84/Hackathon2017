@@ -1,27 +1,28 @@
-﻿(($) => {
-    let selectors = {
+'use strict';
+
+(function ($) {
+    var selectors = {
         root: '.hotspot-image',
-        imageContainer: '.hotspot-image__image',
+        imageContainer: '.hotspot-image__image'
     };
 
-    let _eventListeners = () => {
-        $(selectors.imageContainer).on('click', (e) => {
+    var _eventListeners = function _eventListeners() {
+        $(selectors.imageContainer).on('click', function (e) {
             debugger;
-            let $this = $(e.target);
+            var $this = $(e.target);
             if ($this.hasClass('hotspot')) {
                 alert('You cannot add a hotspot to the same location');
             } else {
-                let offset = $this.offset();
+                var offset = $this.offset();
 
-                let x = e.pageX - offset.left;
-                let y = e.pageY - offset.top;
+                var x = e.pageX - offset.left;
+                var y = e.pageY - offset.top;
 
-                let imageHeight = $this.height();
-                let imageWidth = $this.width();
+                var imageHeight = $this.height();
+                var imageWidth = $this.width();
 
-                let yPos = (y / imageHeight * 100).toFixed(2);
-                let xPos = (x / imageWidth * 100).toFixed(2);
-
+                var yPos = (y / imageHeight * 100).toFixed(2);
+                var xPos = (x / imageWidth * 100).toFixed(2);
 
                 // send api call providing x and y positions
 
@@ -34,7 +35,7 @@
         });
     };
 
-    let _sendData = () => {
+    var _sendData = function _sendData() {
 
         var apiUrl = '';
 
@@ -43,30 +44,28 @@
             type: 'POST',
             dataType: 'json',
             data: 'x and y',
-            success: function (data) {
-
-            },
-            error: function (data) {
+            success: function success(data) {},
+            error: function error(data) {
                 throw Error('Unable to POST event to the service');
             }
         });
     };
 
-    let _addHotspot = (x, y) => {        
+    var _addHotspot = function _addHotspot(x, y) {
         // this will be done after confirmation from sitecore that item is created
         $('.js-hotspots').append('<span class="hotspot" style="top: ' + y + '%; left: ' + x + '%; "></span>');
     };
 
-    let _activateHotspots = () => {
-        $('.hotspots-controls__activate').on('click', (e) => {
+    var _activateHotspots = function _activateHotspots() {
+        $('.hotspots-controls__activate').on('click', function (e) {
             $(e.target).hide();
             $('.hotspots-controls__deactivate').show();
             _eventListeners();
         });
     };
 
-    let _deactivateHostpots = () => {
-        $('.hotspots-controls__deactivate').on('click', (e) => {
+    var _deactivateHostpots = function _deactivateHostpots() {
+        $('.hotspots-controls__deactivate').on('click', function (e) {
             debugger;
             $(e.target).hide();
             $('.hotspots-controls__activate').show();
@@ -74,11 +73,9 @@
         });
     };
 
-    let _toggleHotspotContent = () => {
+    var _toggleHotspotContent = function _toggleHotspotContent() {};
 
-    };
-
-    let init = () => {
+    var init = function init() {
         if ($(selectors.root).length) {
             _activateHotspots();
             _deactivateHostpots();
@@ -86,5 +83,4 @@
     };
 
     init();
-
 })(jQuery);
