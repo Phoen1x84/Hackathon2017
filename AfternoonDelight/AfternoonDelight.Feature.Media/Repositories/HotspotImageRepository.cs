@@ -36,6 +36,8 @@ namespace AfternoonDelight.Feature.Media.Repositories
 
                 hotspotImageRenderingModel.Hotspots = hotspots;
                 hotspotImageRenderingModel.HasHotspots = hotspots.Any();
+
+                hotspotImageRenderingModel.DatabaseName = Sitecore.Context.Database.Name;
             }
 
             return hotspotImageRenderingModel;

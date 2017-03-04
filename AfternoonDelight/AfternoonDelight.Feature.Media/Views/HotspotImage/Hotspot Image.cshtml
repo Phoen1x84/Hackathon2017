@@ -12,7 +12,7 @@
     <a href="#" class="hotspots-controls__activate">Add hotspot</a>
     <a href="#" class="hotspots-controls__deactivate">Remove hotspot</a>
 </div>
-<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes) data-hotspot-id="">
+<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes) data-hotspot-image-id="@Model.Id" data-database-name="@Model.DatabaseName">
     @Model.MessageIsEmpty
     <h2>@Model.ImageTitle</h2>
     
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="hotspot-image__description" data-hotspot-image-id="@Model.Id">
+    <div class="hotspot-image__description">
         @if (Model.HasImageDescription || (!Model.HasImageDescription && Html.Sxa().IsEdit))
         {
             if (Sitecore.Context.PageMode.IsExperienceEditorEditing)

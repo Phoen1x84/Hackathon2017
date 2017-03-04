@@ -17,5 +17,6 @@ namespace AfternoonDelight.Feature.Media.Models
         public bool HasImageDescription { get; set; }
         public IEnumerable<HotspotModel> Hotspots { get; set; }
         public bool HasHotspots { get; set; } 
+        public string DatabaseName { get; set; }
     }
 }
