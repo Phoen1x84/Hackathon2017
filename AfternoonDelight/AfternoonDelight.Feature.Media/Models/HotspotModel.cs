@@ -15,8 +15,9 @@ namespace AfternoonDelight.Feature.Media.Models
 {
     public class HotspotModel
     {
-        public int LocationX { get; set; }
-        public int LocationY { get; set; }
+        public string Id { get; set; }
+        public double LocationX { get; set; }
+        public double LocationY { get; set; }
         public string Title { get; set; }
         public MvcHtmlString Icon { get; set; }
         public string Description { get; set; }
@@ -33,14 +34,16 @@ namespace AfternoonDelight.Feature.Media.Models
                 return;
             }
 
-            int locationX;
-            if (int.TryParse(item[Templates.Hotspot.Fields.LocationX], out locationX))
+            Id = item.ID.ToString();
+
+            double locationX;
+            if (double.TryParse(item[Templates.Hotspot.Fields.LocationX], out locationX))
             {
                 LocationX = locationX;
             }
 
-            int locationY;
-            if (int.TryParse(item[Templates.Hotspot.Fields.LocationY], out locationY))
+            double locationY;
+            if (double.TryParse(item[Templates.Hotspot.Fields.LocationY], out locationY))
             {
                 LocationY = locationY;
             }

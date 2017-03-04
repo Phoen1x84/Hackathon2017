@@ -65,7 +65,9 @@ namespace AfternoonDelight.Feature.Media.Repositories
 
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
-                Item hotspotItem = hotspotImageItem.Add($"{hotspotModel.LocationX} {hotspotModel.LocationY}", templateId);
+                string itemName = ItemUtil.ProposeValidItemName($"{hotspotModel.LocationX} {hotspotModel.LocationY}");
+
+                Item hotspotItem = hotspotImageItem.Add(itemName, templateId);
 
                 try
                 {
