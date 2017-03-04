@@ -8,25 +8,16 @@
 
 @model AfternoonDelight.Feature.Media.Models.HotspotImageRenderingModel
 
-<div @Html.Sxa().Component("image", Model.Attributes)>
-    <div class="component-content">
-        @Model.MessageIsEmpty
-        
-        @Html.RenderPartial("ImageContent", Model);
-
+<div class="hotspot-image" @Html.Sxa().Component("image", Model.Attributes)>
+    @Model.MessageIsEmpty
+    <p>@Model.ImageTitle</p>
+    <div class="hotspot-image__image">
         @Model.Image
-
-        @Model.ImageTitle
-
-        @foreach (HotspotModel hotspotModel in Model.Hotspots)
-        {
-            @hotspotModel.Title
-            @hotspotModel.Description
-            @hotspotModel.Icon
-            @hotspotModel.LocationX
-            @hotspotModel.LocationY
-        }
-
+        <span class="hotspot-image__hotspot  hotspot-image__hotspot--active a">
+        </span>
+        <span class="hotspot-image__hotspot b"></span>
+        <span class="hotspot-image__hotspot  hotspot-image__hotspot--large c"></span>
+    <div>
         @if (Model.HasImageDescription || (!Model.HasImageDescription && Html.Sxa().IsEdit))
         {
             <span class="image-caption">
@@ -40,5 +31,16 @@
                 }
             </span>
         }
+    <div>
+        @foreach (HotspotModel hotspotModel in Model.Hotspots)
+        {
+            <div>
+                @hotspotModel.Title
+                @hotspotModel.Description
+                @hotspotModel.Icon
+                @hotspotModel.LocationX
+                @hotspotModel.LocationY
+            </div>
+        }
     </div>
-</div>
+<div>

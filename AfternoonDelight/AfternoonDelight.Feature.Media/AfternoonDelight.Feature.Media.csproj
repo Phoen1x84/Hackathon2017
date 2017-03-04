@@ -209,7 +209,6 @@
     </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="Views\HotspotImage\HotspotImage.cshtml" />
     <Content Include="Views\HotspotImage\Hotspot Image.cshtml" />
     <None Include="Views\Web.config" />
     <Content Include="App_Config\Include\zzzAfternoonDelight\AfternoonDelight.Feature.Media.config" />
