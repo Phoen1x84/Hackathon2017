@@ -252,10 +252,10 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="dist\css\main.css" />
-    <Content Include="dist\css\main.min.css" />
-    <Content Include="dist\scripts\main.js" />
-    <Content Include="dist\scripts\main.min.js" />
+    <Content Include="dist\css\hotspots.css" />
+    <Content Include="dist\css\hotspots.min.css" />
+    <Content Include="dist\scripts\hotspots.js" />
+    <Content Include="dist\scripts\hotspots.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -286,8 +286,8 @@
     </Content>
     <Content Include="App_Config\ConnectionStrings.config" />
     <Content Include="package.json" />
+    <Content Include="dist\scripts\hotspots.min.js.map" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
-    <Content Include="dist\scripts\main.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -299,7 +299,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="src\scripts\app.js" />
+    <Content Include="src\scripts\hotspots.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -316,11 +316,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="src\styles\main.scss" />
+    <Content Include="src\styles\hotspots.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="dist\" />
     <Folder Include="src\fonts\" />
     <Folder Include="src\images\" />
     <Folder Include="src\scripts\modules\" />

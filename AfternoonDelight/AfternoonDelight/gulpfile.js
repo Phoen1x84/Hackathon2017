@@ -42,14 +42,14 @@ var paths = {
 // --------------------------------
 // SCSS compilation
 gulp.task('compile-sass', function () {
-    return gulp.src(paths.src.styles + 'main.scss')
+    return gulp.src(paths.src.styles + 'hotspots.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'IE 9'],
             cascade: false
         }))
         .pipe(concat({
-            path: 'main.css'
+            path: 'hotspots.css'
         }))
         .pipe(gulp.dest(paths.dist.css))
         .pipe(rename({
@@ -183,11 +183,11 @@ gulp.task('compile-js', function () {
             paths.src.scripts + 'modules/**/*.js',
             paths.src.scripts + 'partials.js',
             paths.src.scripts + 'templates.js',
-            paths.src.scripts + 'app.js',
+            paths.src.scripts + 'hotspots.js',
     ])
         .pipe(sourcemaps.init())
         .pipe(concat({
-            path: 'main.js'
+            path: 'hotspots.js'
         }))
         .pipe(babel({
             presets: ['es2015']
