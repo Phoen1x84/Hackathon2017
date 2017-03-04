@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AfternoonDelight.Feature.Media</RootNamespace>
     <AssemblyName>AfternoonDelight.Feature.Media</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -161,9 +161,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -203,14 +203,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\css\hotspots.css" />
+    <Content Include="dist\css\hotspots.min.css" />
+    <Content Include="dist\scripts\hotspots.js" />
+    <Content Include="dist\scripts\hotspots.min.js" />
+    <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="src\scripts\hotspots.js" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\HotspotImage\HotspotImage.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="src\styles\hotspots.scss" />
+    <Content Include="dist\scripts\hotspots.min.js.map" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -235,7 +244,15 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="src\fonts\" />
+    <Folder Include="src\images\" />
+    <Folder Include="src\scripts\modules\" />
+    <Folder Include="src\scripts\utilities\" />
+    <Folder Include="src\scripts\vendor\" />
+    <Folder Include="src\styles\core\" />
+    <Folder Include="src\styles\modules\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
